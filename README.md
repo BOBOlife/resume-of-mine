@@ -1,9 +1,9 @@
-网页预览：http://bobolife.xyz/cv-of-mine/dist/
+网页预览：http://bobolife.xyz/resume-of-mine/dist/
 
 ## 开发模式
 
 ```
-npm i -g parcel-bundler
+npm i -g parcel
 parcel src/index.html
 ```
 
