@@ -292,7 +292,7 @@
         <ul>
           <li>熟练掌握 HTML5、CSS3 以及常用的<strong>响应式布局</strong>、<strong>移动端布局</strong>方案, 熟练编写<strong>语义化</strong>页面</li>
           <li>熟练掌握 JavaScript、TypeScript，熟悉 ES6，包括 let / const / Promise / await / 析构赋值</li>
-          <li>熟练掌握 Vue2.x/3.x、VueRouter、Vuex 等<strong>Vue全家桶</strong>，熟悉Vue原理，有阅读过部分源码</li>
+          <li>熟练掌握 Vue2.x/3.x、VueRouter、Vuex/Pinia、Nuxt3等<strong>Vue全家桶</strong>，熟悉Vue原理，阅读过部分源码</li>
           <li>
             熟悉 <strong>React全家桶</strong>的使用，包括
             create-react-app、ReactRouter、<strong>Redux</strong>、常用<strong>Hooks</strong>
@@ -302,13 +302,13 @@
             熟悉<strong>前后端分离</strong>技术，包括DOM、AJAX、跨域、闭包（Closure）、<strong>原型链</strong>、this、面向对象等
           </li>
           <li>熟悉前端工程化，熟悉 Webpack、Vite ，Rollup等构建工具，有一定的应用及思考</li>
-          <li>熟练掌握 iViewUI、ElementUI、AntDesign、VantUI 等业界UI框架以及周边生态应用</li>
+          <li>熟练掌握 iViewUI、ElementUI、AntDesign、VantUI 等等业界UI框架以及周边生态应用</li>
           <li>
             熟悉 <strong>原生小程序</strong>、<strong>uni-app</strong> 开发，能独立完成小程序和移动端app的项目框架搭建、开发、测试及部署;
           </li>
-          <li>熟悉 模块化规范、CSS预处理器、数据可视化、性能优化，在实际开发中落地并实现</li>
+          <li>熟悉 模块化规范、CSS预处理器 / 原子化CSS、数据可视化、性能优化，在实际开发中落地并实现</li>
           <li>
-            熟悉 Node.js，了解常用的 Node 模块
+            熟悉 Koa 和 Node.js，了解常用的 Node 模块，有过真实企业项目开发经验（BFF）
           </li>
         </ul>
       </div>
@@ -316,6 +316,68 @@
     <section class="projects">
       <h2>项目经历</h2>
       <ol>
+        <li>
+          <header>
+            <h3>azgo App</h3>
+            <span style="padding-top: 2px;">
+              同程旅行
+            </span>
+          </header>
+          <p>
+          <div style="word-wrap: break-word;">
+            <h4>技术栈：</h4>Flutter/Nodejs/Koa/routing-controllers/Redis/Vue3
+          </div>
+          </p>
+          <p>
+          <h4>项目介绍：</h4>
+          azgo 是一款全球酒店、航班、景点门票旅游返利 APP，提供酒店预订、航班预订、景点门票和旅游产品等服务，用户可在 APP 上预订并享受返利优惠。项目以 Flutter 开发为主，BFF 层采用 Node.js，部分页面通过 Vue3 开发并内嵌。
+          </p>
+          <p>
+          <h4>项目内容：</h4>
+            
+          <div>
+            1.我主要负责 BFF 层开发，通过 <strong>BFF 动态下发组件</strong>至 App 端，实现页面展示与渲染，减轻 App 端的业务逻辑处理;<strong>构建并维护 xpage 系统</strong>，通过通用的 controller 接口接收参数，<strong>支持多种页面的灵活渲染</strong>，减少代码冗余，提升开发效率;实现 BFF 层上的快速迭代，支持直接修改代码并发布至生产环境，避免 App 端的发版审核流程，<strong>显著提升产品发布效率</strong>。目前已完成主要业务的 BFF 化，正在逐步将其他页面迁移至该架构。
+          </div>
+          <div>
+            2.BFF层使用 Koa 框架结合 routing-controllers 实现路由控制，通过 <strong>Redis 缓存</strong>保证数据的及时性和唯一性，提升接口访问速度。负责国际化接入，<strong>编写脚本</strong>同步国际化平台的语言，并扩展语言<strong>插值</strong>功能。
+          </div>
+          <div>
+            3.编写中间件，<strong>处理请求</strong>，<strong>处理数据</strong>，<strong>处理异常</strong>，<strong>处理日志</strong>等，提高了代码的复用性，减少了代码的冗余。
+          </div>
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>海外比价项目 - azgo.ai</h3>
+            <span style="padding-top: 2px;">
+              同程旅行
+            </span>
+          </header>
+          <p>
+          <div style="word-wrap: break-word;">
+            <h4>技术栈：</h4>Nuxt3/Pinia/TypeScript/VueUse/UnoCSS/SCSS/ElementPlus/Vant 
+          </div>
+          </p>
+          <p>
+          <h4>项目介绍：</h4>
+          azgo.ai 是一个全球景点门票比价平台，帮助用户在海外旅游时找到最佳购票价格并帮助其下单。项目采用 Nuxt3 开发，重点优化 SEO、提升网站访问速度和用户体验，同时实现 PC 和移动端适配。
+          </p>
+          <p>
+          <h4>项目内容：</h4>
+          <div>
+            1.项目采用Nuxt3框架,使用了SSR模式，提高SEO优化，提高网站访问速度，使用Pinia作为状态管理，使用<strong>UnoCSS</strong>作为样式引擎，使用ElementPlus和VantUI作为UI组件库，使用TypeScript作为开发语言。
+          </div>
+          <div>
+            2.<strong>封装插件</strong>判断用户的设备，根据不同的设备，加载不同的组件，在网页宽度小于768px时，<strong>有状态切换</strong>成移动端的组件,切换效果非常丝滑，在Layout的文件里面做了不同端适配切换，解决不同layout布局页面水合问题和接口的重复调用问题，PC与H5的适配这一块都是<strong>遵循响应式布局</strong>的，提高了用户的体验。
+          </div>
+          <div>
+            3.项目采用<strong>组件化</strong>开发,项目中抽取了很多公共的逻辑，封装成<strong>自定义hook</strong>来使用，提高了代码的复用性，减少了代码的冗余，提高了开发效率。
+          </div>
+          <div>
+            4.通过 nuxt-gtag 模块 和 GTM 配置页面曝光(<strong>编写中间件自定义数据上报</strong>)与按钮点击事件埋点，实现用户行为跟踪与分析，支持业务数据的精准决策。
+          </div>
+          </p>
+        </li>
         <li>
           <header>
             <h3>用钢清</h3>
