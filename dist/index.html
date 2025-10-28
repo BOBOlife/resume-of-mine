@@ -357,10 +357,10 @@ h4 {
             1.项目采用微前端架构，使用Wujie作为微前端框架，实现主应用与子应用的无缝集成与通信，提升系统的可维护性和扩展性。主应用负责整体布局和导航，子应用专注于各自的AI智能体相关功能模块，通过Wujie实现资源隔离和独立部署，确保各模块的稳定运行。
           </div>
           <div>
-            2.项目使用了Unocss作为样式引擎，支持按需加载和动态主题切换，配合<strong>AI流式对话</strong>可以直接产出高质量的UI界面。
+            2.在文本处理方面，<strong>自研对话容器渲染器</strong>，流式对话文字中可以支持自定义vue组件的渲染等，集成<strong>Unified.js</strong>生态系统，在此基础上实现了Markdown文本的解析、转换，<strong>手写AST转译插件</strong>，满足vue的自定义组件并且可以支持有状态，支持多种文本格式和自定义扩展功能，满足用户多样化的文本处理需求，实现多种对话场景的灵活渲染和交互，核心指标是财务相关系统能效巨幅提升，直接在混合式界面中处理审查等等逻辑。
           </div>
           <div>
-            3.在文本处理方面，<strong>自研对话容器渲染器</strong>，流式对话文字中可以支持自定义vue组件的渲染等，集成<strong>Unified.js</strong>生态系统，在此基础上，实现了Markdown文本的解析、转换，<strong>手写AST转译插件</strong>，支持多种文本格式和自定义扩展功能，满足用户多样化的文本处理需求，实现多种对话场景的灵活渲染和交互，核心指标是财务相关系统能效巨幅提升，直接在混合式界面中处理审查等等逻辑。
+            3.项目使用了Unocss作为样式引擎，支持按需加载和动态主题切换，配合AI流式对话可以直接产出高质量的UI界面。
           </div>
           <p></p>
         </li>
@@ -387,13 +387,13 @@ h4 {
             1.我主要负责服务端BFF层开发，通过 <strong>BFF 动态下发组件</strong>至 App 端，实现页面展示与渲染，减轻 App 端的业务逻辑处理;<strong>构建并维护 xpage 系统</strong>，通过通用的 controller 接口接收参数，<strong>支持多种页面的灵活渲染</strong>，减少代码冗余，提升开发效率;实现 BFF 层上的快速迭代，支持直接修改代码并发布至生产环境，避免 App 端的发版审核流程，<strong>显著提升产品发布效率</strong>。目前已完成主要业务的 BFF 化，正在逐步将其他页面迁移至该架构。
           </div>
           <div>
-            2.BFF层使用 Koa 框架结合 routing-controllers 实现路由控制，通过 <strong>Redis 缓存</strong>保证数据的及时性和唯一性，提升接口访问速度。负责国际化接入，<strong>编写脚本</strong>同步国际化平台的语言，并扩展语言<strong>插值</strong>功能。
+            2.使用Koa框架结合 routing-controllers 实现路由控制，通过 <strong>Redis 缓存</strong>保证数据的及时性和唯一性，提升接口访问速度。负责国际化接入，<strong>编写脚本</strong>同步国际化平台的语言，并扩展多语言翻译<strong>插值</strong>功能。
           </div>
           <div>
-            3.编写中间件，<strong>处理请求</strong>，<strong>处理数据</strong>，<strong>处理异常</strong>，<strong>处理日志</strong>等，提高了代码的复用性，减少了代码的冗余。
+            3.研发tc-codegen自动化工具，基于Apifox服务端接口参数规范，自动生成Typescript类型定义及接口请求函数，大幅减少重复开发工作量，降低人为错误风险。
           </div>
           <div>
-            4.研发tc-codegen自动化工具，基于Apifox服务端接口参数规范，自动生成Typescript类型定义及接口请求函数，大幅减少重复开发工作量，降低人为错误风险。
+            4.编写中间件，<strong>处理请求</strong>，<strong>处理数据</strong>，<strong>处理异常</strong>，<strong>处理日志</strong>等，提高了代码的复用性，减少了代码的冗余。
           </div>
           <p></p>
         </li>
@@ -503,22 +503,22 @@ h4 {
           <p></p>
         </li>
 
-        <li>
+        <!-- <li>
           <header>
             <h3>游戏资源网</h3>
-            <span style="padding-top: 2px">上海游迅信息科技有限公司</span>
+            <span style="padding-top: 2px;">上海游迅信息科技有限公司</span>
           </header>
           <p>
-          </p><h4>技术栈:</h4>React/React Router/Mobx/Webpack/自定义Hooks/styled-components<p></p>
+          <h4>技术栈:</h4>React/React Router/Mobx/Webpack/自定义Hooks/styled-components</p>
           <p>
-          </p><h4>项目介绍：</h4>此项目分成移动端和PC端，均是主以内容展示为主。项目均使用react进行开发。
-          <p></p>
+          <h4>项目介绍：</h4>此项目分成移动端和PC端，均是主以内容展示为主。项目均使用react进行开发。
+          </p>
           <p>
-          </p><h4>个人职责：</h4><strong>独立负责</strong>移动端的开发，使用React,webpack
+          <h4>个人职责：</h4><strong>独立负责</strong>移动端的开发，使用React,webpack
           等库来开发，从零搭建项目，实现搜索，筛选，下载，markdown编辑，发布等功能；PC端负责主要页面的开发，首页，标签页，详情页，排行页等。
           封装分页组件，轮播组件等
-          <p></p>
-        </li>
+          </p>
+        </li> -->
       </ol>
     </section>
     <section class="openSource">
