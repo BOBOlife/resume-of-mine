@@ -1,6 +1,10 @@
 {
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --no-source-maps --dist-dir build --public-url ./ && cssnano build/index.css build/index.css"
+  },
   "devDependencies": {
-    "cssnano": "^4.1.10",
-    "parcel": "^2.10.3"
+    "cssnano": "^7.1.2",
+    "parcel": "^2.16.1"
   }
 }
