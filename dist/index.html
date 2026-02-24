@@ -250,11 +250,11 @@ h4 {
           </header>
           <ul>
             <li>
-              <h4>公司项目：</h4>贴心AI，agzo App，agzo.ai
+              <h4>公司项目：</h4>贴心AI，azgoXplore
             </li>
             <li>
               <h4>个人职责：</h4>
-              主要负责组内前端基础建设和业务开发， 如 BFF 和 Nuxt 网站的产品开发与前端建设，全权负责AI应用项目前端从0到1的架构搭建和后续迭代优化工作，参与制定前端技术规范和最佳实践，推动前端技术在团队内的应用和推广；协助团队成员解决技术难题，提升整体技术水平；担任技术面试官面试新人，并成为导师帮助程星快速成长。
+              主要负责组内前端基础建设和业务开发， 如 BFF 和 SSR 网站的产品开发与前端建设，全权负责AI应用项目前端从0到1的架构搭建和后续迭代优化工作，参与制定前端技术规范和最佳实践，推动前端技术在团队内的应用和推广；协助团队成员解决技术难题，提升整体技术水平；担任技术面试官面试新人等等。
             </li>
           </ul>
         </li>
@@ -351,23 +351,32 @@ h4 {
         </li>
         <li>
           <header>
-            <h3>azgo App</h3>
+            <h3>azgoXplore</h3>
             <span style="padding-top: 2px">
               同程网络科技股份有限公司
             </span>
           </header>
           <p>
           </p><div style="word-wrap: break-word">
-            <h4>技术栈：</h4> Nodejs/Koa/Routing-controllers/Redis/Flutter
+            <h4>技术栈：</h4> Nodejs/Koa/Routing-controllers/Redis/Flutter/Nextjs/Zustand/Tailwind/shadcn
           </div>
           <p></p>
           <p>
           </p><h4>项目介绍：</h4>
-          azgo 是一款全球酒店、航班、景点门票旅游返利 APP，提供酒店预订、航班预订、景点门票和旅游产品等服务，用户可在 APP 上预订并享受返利优惠。
+          azgoXplore 是一款OTA 比价平台整合全球主流在线旅游代理商机票、景点、酒店等产品数据，通过跨平台对比与智能筛选，帮助用户快速锁定高性价比选项，简化旅游预订决策流程。
           <p></p>
           <p>
           </p><h4>项目内容：</h4>
-            
+            <div>负责海外项目azgo App （Flutter 技术栈）的功能开发，主导首页、列表、详情、返现体系等核心模块实现</div>
+          <div>
+            主导设计并搭建Node BFF架构，通过下发JSON Schema 与 Flutter 数据模型的联动，实现高频改动页面的动态更新，无需审核流程即可实现页面更新，大幅度提升功能迭代效率
+          </div>
+          <div>
+            基于Nextjs技术栈主导 azgoXplore 项目的脚手架搭建与开发，集成了Eslint、Prettier、CommitLint等工具链规范代码质量，实现PC端与移动端的自适应切换并保持各自状态独立，达成核心逻辑代码“一码两端”复用
+          </div>
+          <div>
+            设计并实现tc-bridge通信层，规范Web页面与APP端的交互标准，保证跨部门协作的接口一致性和稳定性，提升多端协同效率
+          </div>
           <div>
             1.主要负责<strong>服务端开发</strong>，通过 <strong>BFF 动态下发组件</strong>至 App 端，实现页面展示与渲染，减轻 App 端的业务逻辑处理;<strong>独立构建并维护 xpage 系统</strong>，通过通用的 controller 接口接收参数，<strong>支持多种页面的灵活渲染</strong>，减少代码冗余，提升开发效率;实现 BFF 层上的快速迭代，支持直接修改代码并发布至生产环境，避免 App 端的发版审核流程，<strong>显著提升产品发布效率</strong>。
           </div>
@@ -378,44 +387,13 @@ h4 {
             3.自研tc-codegen<strong>自动化工具</strong>，基于Apifox服务端接口参数规范，自动生成Typescript类型定义及接口请求函数，大幅减少重复开发工作量，降低人为错误风险。
           </div>
           <div>
-            4.开发中间件，对项目整体进行统一的<strong>处理请求</strong>，<strong>处理数据</strong>，<strong>处理异常</strong>，<strong>处理日志</strong>等，提高了代码的复用性，减少了代码的冗余。
+            1.基于 Nextjs 全端<strong>SSR</strong>，实现PC端和移动端的<strong>智能适配</strong>，页面<strong> 0 刷新切换布局模式</strong>，同时确保页面状态<strong>无缝衔接</strong>，保障跨设备体验一致性
           </div>
-          <p></p>
-        </li>
-        <li>
-          <header>
-            <h3>海外比价项目 - azgo.ai</h3>
-            <span style="padding-top: 2px">
-              同程网络科技股份有限公司
-            </span>
-          </header>
-          <p>
-          </p><div style="word-wrap: break-word">
-            <h4>技术栈：</h4>Nuxt3/Pinia/TypeScript/VueUse/TailwindCSS/Radix 
-          </div>
-          <p></p>
-          <p>
-          </p><h4>项目介绍：</h4>
-          azgo.ai 是一个OTA比价平台，整合全球主流在线旅游代理商机票酒店等产品数据，通过跨平台对比和智能筛选，帮助用户快速锁定高性价比选项，简化旅游预订决策流程。
-          <p></p>
-          <p>
-          </p><h4>项目内容：</h4>
-          <div>
-            1.基于 Nuxt3 全端<strong>SSR</strong>，实现PC端和移动端的<strong>智能适配</strong>，页面<strong> 0 刷新切换布局模式</strong>，同时确保页面状态<strong>无缝衔接</strong>，保障跨设备体验一致性
-          </div>
-          <!-- <div>
-            2.<strong>封装插件</strong>判断用户的设备，根据不同的设备，加载不同的组件，在网页宽度小于768px时，<strong>有状态切换</strong>成移动端的组件,切换效果非常丝滑，在Layout的文件里面做了不同端适配切换，解决不同layout布局页面水合问题和接口的重复调用问题，PC与H5的适配这一块都是<strong>遵循响应式布局</strong>的，提高了用户的体验。
-          </div> -->
           <div>
             2.构建多语言国际化体系，借助URL语言标识强化搜索引擎收录，配合标签关联与head元描述优化，显著提升SEO效果</div>
           <div>
-          <div>
-            3.搭建并封装公共composables与<strong>原子组件</strong>，业务代码复用率 60%，新增页面开发人效提高66% 
-          </div>
-            4.自研中间件整合 Nuxt-GTag &amp; GTM，页面曝光、按钮点击 100% 上报，核心漏斗转化率误差 &lt; 1%，支持业务秒级决策
-          </div>
           <p></p>
-        </li>
+        </div></li>
         <li>
           <header>
             <h3>用钢清</h3>
@@ -484,62 +462,39 @@ h4 {
           </div>
           <p></p>
         </li>
-
-        <!-- <li>
-          <header>
-            <h3>游戏资源网</h3>
-            <span style="padding-top: 2px;">上海游迅信息科技有限公司</span>
-          </header>
-          <p>
-          <h4>技术栈:</h4>React/React Router/Mobx/Webpack/自定义Hooks/styled-components</p>
-          <p>
-          <h4>项目介绍：</h4>此项目分成移动端和PC端，均是主以内容展示为主。项目均使用react进行开发。
-          </p>
-          <p>
-          <h4>个人职责：</h4><strong>独立负责</strong>移动端的开发，使用React,webpack
-          等库来开发，从零搭建项目，实现搜索，筛选，下载，markdown编辑，发布等功能；PC端负责主要页面的开发，首页，标签页，详情页，排行页等。
-          封装分页组件，轮播组件等
-          </p>
-        </li> -->
       </ol>
     </section>
-    <section class="openSource">
+    <!-- <section class="openSource">
       <h2>开源项目</h2>
       <ul>
         <li>
           <header>
             <h3>mini-vue-core</h3>
-            <!-- <span>
-              <a href="https://github.com/BOBOlife/mini-vue-core">源码链接</a>
-            </span> -->
           </header>
           <p>
-          </p><h4>技术栈：</h4>Javascript/Typescript/Vitest/TDD/Rollup/Monorepo
-          <p></p>
+          <h4>技术栈：</h4>Javascript/Typescript/Vitest/TDD/Rollup/Monorepo
+          </p>
           <p>
-          </p><h4>项目介绍：</h4>
+          <h4>项目介绍：</h4>
           该项目主要是为了帮助大家学习Vue3源码而进行开发，项目结构上的使用<strong>Monorepo</strong>进行管理，配合<strong>vitest</strong>，使用<strong>TDD</strong>的手法进行开发和重构，实现了<strong>reactivity</strong>、runtime-core、runtime-dom、comilper-core等核心模块
-          <p></p>
+          </p>
 
         </li>
 
         <li>
           <header>
             <h3>Tears-UI</h3>
-            <!-- <span>
-              <a href="https://github.com/BOBOlife/tears-ui">源码链接</a>
-            </span> -->
           </header>
           <p>
-          </p><h4>技术栈：</h4>Vue.js/SCSS/VuePress/ES6/Parcel/Chai.js/Mocha/TravisCI
-          <p></p>
+          <h4>技术栈：</h4>Vue.js/SCSS/VuePress/ES6/Parcel/Chai.js/Mocha/TravisCI
+          </p>
           <p>
-          </p><h4>项目介绍：</h4>
+          <h4>项目介绍：</h4>
           该项目是参照市面上知名UI库的思路，做的一个基于Vue的简易<strong>UI组件库</strong>，目前已支持按钮、输入框、栅格、布局、Toast、Tabs、Popover、手风琴等组件。每个组件均经历从<strong>需求分析</strong>到<strong>Mocha单元测试</strong>，并用<strong>TravisCI实现持续集成</strong>，最终以VuePress为基础制作<strong>官方文档</strong>，发布于npmjs.org。完成该项目使我对自己对<strong>前端工程化流程以及单元测试重要性的深刻理解</strong>，进一步加深了对开源文化的了解。
-          <p></p>
+          </p>
         </li>
       </ul>
-    </section>
+    </section> -->
     <section class="others">
       <h2>个人优势</h2>
       <ul style="padding-left: 16px; list-style: outside">
