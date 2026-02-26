@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  margin: 20px 0;
+}
+
+article {
+  background: #fff;
+  width: 21cm;
+  min-height: 29.7cm;
+  margin: 0 auto;
+  padding: 1em;
+  overflow: auto;
+}
+
+p {
+  margin: .3em 0;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 25px;
+}
+
+h2 {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+}
+
+h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h4 {
+  font-weight: bolder;
+  display: inline;
+}
+
+h3, h5, h6 {
+  font-weight: normal;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+strong {
+  color: #f60;
+  font-weight: normal;
+}
+
+a {
+  color: #999;
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+p, li {
+  color: #666;
+  line-height: 1.6;
+}
+
+.bio {
+  position: relative;
+}
+
+.bio img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.jobs > ol > li {
+  margin: 12px 0;
+}
+
+.jobs header {
+  color: #666;
+  margin-bottom: 12px;
+  display: flex;
+}
+
+.jobs header > h3 {
+  color: #333;
+  font-size: 18px;
+}
+
+.jobs header > h4 {
+  margin-left: 1em;
+  font-size: 18px;
+}
+
+.jobs header > span {
+  margin-left: auto;
+  font-size: 18px;
+}
+
+.skills .wrapper {
+  justify-content: space-between;
+  display: flex;
+}
+
+.skills .wrapper > :first-child {
+  margin-right: 24px;
+}
+
+.skills .wrapper ul {
+  color: #333;
+}
+
+.skills .wrapper strong {
+  color: #f60;
+}
+
+.skills .wrapper ul > li {
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+#skills {
+  width: 500px;
+  height: 270px;
+}
+
+.projects > ol {
+  margin-top: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.projects > ol > li {
+  margin-bottom: 24px;
+}
+
+.projects > ol > li > header {
+  justify-content: space-between;
+  display: flex;
+}
+
+.projects > ol > li h3 {
+  display: inline-block;
+}
+
+.others ul {
+  padding-left: 16px;
+  list-style: outside;
+}
+
+.education p {
+  margin: .5em 0;
+}
+
+@media print {
+  body {
+    margin: 0;
+  }
+
+  .page2 {
+    page-break-before: always;
+    margin-top: 30px;
+  }
+
+  #skills {
+    display: none;
+  }
+}
+
+@media (width <= 500px) {
+  body {
+    margin: 0;
+  }
+
+  article {
+    width: auto;
+    height: auto;
+  }
+
+  .bio img {
+    display: none;
+  }
+
+  .skills .wrapper {
+    flex-direction: column;
+  }
+
+  #skills {
+    width: auto;
+  }
+
+  .jobs header {
+    flex-direction: column;
+  }
+
+  .jobs header > h3, .jobs header > h4, .jobs header > span {
+    margin: 0;
+  }
+
+  .imgSize {
+    display: none;
+  }
+}
+/*# sourceMappingURL=resume-of-mine.6bac7418.css.map */
