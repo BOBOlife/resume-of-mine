@@ -146,21 +146,23 @@
           <p>
             </p><h4>项目内容：</h4>
           <p></p>
-          <div>负责海外项目azgo App （Flutter 技术栈）的功能开发，主导首页、列表、详情、返现体系等核心模块实现</div>
           <div>
-            1.主导设计并搭建 Node BFF 架构，通过 JSON Schema 与 Flutter 数据模型联动，实现高频页面动态化：设计 Flutter 端通用渲染引擎解析组件树，搭建 xPage 通用渲染系统支持多页面灵活配置，解决运营迭代发版审核瓶颈，周期从 2 周降至小时级，减少 40% 端侧业务逻辑
+            1.主导设计并搭建 Node BFF 架构，通过 <strong>JSON Schema 与 Flutter 数据模型联动</strong>，实现<strong>高频页面动态化</strong>，参与设计 Flutter 端通用渲染引擎解析组件树，独立搭建 xPage <strong>通用渲染系统</strong>支持多页面灵活迭代，解决运营迭代发版审核瓶颈，周期从 2 周降至小时级。
           </div>
           <div>
-            2.基于 Next.js 实现 SSR + 智能设备适配，集成了Eslint、Prettier、CommitLint等工具链规范代码质量, 实现 PC/移动端 零刷新自适应切换且状态保持，核心逻辑代码"一码双端"复用，保障跨设备体验一致性
+            2.负责海外项目azgo App （Flutter 技术栈）的功能开发，主导首页、列表、详情、返现体系等核心模块实现
           </div>
           <div>
-            3.自研 tc-codegen 工具（基于 Apifox 自动生成 TypeScript 类型与接口），消除手写联调成本；制定 tc-bridge 跨端通信标准，封装 WebView 注入层与 Flutter MethodChannel 双向通信 SDK，统一 3 个团队协作协议，提升跨端协作效率
+            2.基于 Next.js 实现 <strong>SSR</strong> + <strong>智能设备适配</strong>，集成了Eslint、Prettier、CommitLint等工具链规范代码质量, 实现 PC/移动端 <strong>零刷新自适应切换且状态保持</strong>，核心逻辑代码<strong>"一码双端"</strong>复用，保障跨设备体验一致性
           </div>
           <div>
-            4.设计 i18n 架构，URL 路径携带语言标识（如 /en/product），SSR 注入 lang 属性与 hreflang 互链标签优化 SEO；开发 Node 同步脚本拉取运营平台翻译数据，支持变量插值（如 Hello {{name}}），5 分钟内完成全站文案热更新，无需发版
+            3.自研 <strong>tc-codegen 工具</strong>（基于 Apifox 自动生成 TypeScript 类型与接口），<strong>消除手写联调成本</strong>；制定 tc-bridge 跨端通信标准，封装 WebView 注入层与 Flutter MethodChannel 双向通信 SDK，统一 3 个团队协作协议，提升跨端协作效率
           </div>
           <div>
-            5.通过 Redis 缓存策略，保证数据的及时性和唯一性，提升接口访问速度
+            4.设计 i18n 架构，URL 路径携带语言标识（如 /en/product），SSR 注入 lang 属性与 hreflang 互链标签优化 SEO；开发 Node 同步脚本拉取运营平台翻译数据，<strong>支持变量插值</strong>（如 Hello {{name}}），5 分钟内完成全站文案热更新，无需发版
+          </div>
+          <div>
+            5.通过 <strong>Redis 缓存策略</strong>，保证数据的及时性和唯一性，提升接口访问速度
           </div>
         </li>
 
@@ -177,19 +179,17 @@
           <p></p>
           <p>
             </p><h4>项目介绍：</h4>
-            此业务系统分为web端和小程序端，为贸易和物流等业务流程赋能，可以快速进行资源等整合推送处理，涵盖销售订单、出入库、提单、物流、财务，数据可视报表等等业务场景，面向B端用户在钢铁贸易垂直领域打造平台化的数字解决方案，为企业业务流转赋能。
+            面向钢铁贸易垂直领域，为 B 端用户提供销售订单、仓储物流、财务结算、数据可视化等全流程数字化解决方案，覆盖 Web 管理后台与小程序双端。
           <p></p>
           <p>
             </p><h4>项目内容：</h4>
           <p></p>
+          <div>1.Web 端<strong>性能优化</strong>，通过 Webpack 分包、懒加载、代码分割、HTTP/2、Gzip、CDN 等手段，LCP 从 13.1s 降至 2.1s</div>
           <div>
-            1.web端管理后台系统，对系统进行了<strong>性能优化</strong>，通过Webpack分包、懒加载、代码分割、开启HTTP/2、Gzip压缩、使用HTTP缓存、使用CDN等优化手段，LCP从13.1s优化到2.1s。
+            2.编写Shell部署脚本，实现自动化打包上传推送，提升发版效率。
           </div>
           <div>
-            2.手写deploy shell脚本，实现自动打包上传推送，提升发版效率。
-          </div>
-          <div>
-            3.小程序端，采用原生微信小程序配合VantUI进行开发，组织架构升级，采用<strong>分包</strong>的形式，分包加载<strong>提高启动速度</strong>，将JavaScript升级到TypeScript，升级上线后无新Bug产生。
+            3.小程序架构升级，原生微信小程序配合 VantUI 开发，采用<strong>分包</strong>加载优化启动速度；主导 JavaScript 迁移 TypeScript，零 Bug 上线
           </div>
         </li>
 
@@ -204,12 +204,12 @@
           <p></p>
           <p>
             </p><h4>项目介绍：</h4>
-            为了应对外部项目的需求，满足快速定制化的交付任务，帮助其他公司快速推进钢贸领域数字化进程，从内部项目用钢清演化并独立出来，旨在快速搭建客户满意的产品，实现数字化定制。
+            从内部系统"用钢清"演化独立，面向钢贸领域数字化定制需求，支撑外部项目快速交付。
           <p></p>
           <p>
             </p><h4>项目内容：</h4>
           <p></p>
-          <div>
+          <!-- <div>
             1.基于iView和vxe-table并进行二次开发，部署到通过verdaccio建立的私有npm上，组件库覆盖95%以上的管理后台业务线。
           </div>
           <div>
@@ -223,7 +223,12 @@
           </div>
           <div>
             5.参与编写完整组件库文档，组件库文档的组件覆盖率超过95%。
-          </div>
+          </div> -->
+
+          <div>基于 iView 与 vxe-table 二次开发，部署至私有 npm（Verdaccio），覆盖 90%+ 管理后台业务场景</div>
+          <div>设计 <strong>JSON 配置化</strong>开发方案：RequestTable / RequestForm 采用<strong>表驱动设计</strong>，开发耗时从半天降至半小时，效率提升 75%；Table-v2 / Form-v2 / ModalForm 原子组件贴合业务场景二次封装，效率提升 40%+</div>
+          <div>开发 Select-v2 虚拟选择器，<strong>突破十万级数据渲染瓶颈</strong></div>
+          <div>编写组件库文档，覆盖率 95%+</div>
         </li>
       </ol>
     </section>
